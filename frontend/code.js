@@ -1,6 +1,6 @@
 async function getTxs(chainId, address) {
 
-    let u = 'https://nicerurl/api/ethIndia?id=' + chainId + '&address=' + address
+    let u = 'https://nodered.x.vimarsh.xyz/api/ethIndia?id=' + chainId + '&address=' + address
     let response = await fetch(u)
 
     if (response.ok) { // if HTTP-status is 200-299

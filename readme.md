@@ -1,4 +1,4 @@
-# Project Name : fee.ninja
+# Project Name : fee ninja
 
 ## About
 
@@ -32,7 +32,4 @@ It's a fun way to share with your friends, how much gas you have spent to mint t
 - Fantom
 - Arbitrum
 - Binance Smart Chain
-
-## Check it out
-- https://beta.valist.io/vim/feeninja
-- https://fee.ninja/
+    
