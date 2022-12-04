@@ -7,6 +7,10 @@ You can either link your wallet or manually enter address or ENS domain name, to
 
 It's a fun way to share with your friends, how much gas you have spent to mint those $Tokens or that cool NFT.
 
+## View fee ninja
+https://bafybeih2o7qwkvamx6d6k6v26hhj5yzu7lyxjdtyojam675sjr2gttjdgy.ipfs.dweb.link/
+https://feeninja--vim.on.valist.io/
+
 ## Structure of Project
 
 - backend // express server that queries data from CovalentHQ.
@@ -32,4 +36,4 @@ It's a fun way to share with your friends, how much gas you have spent to mint t
 - Fantom
 - Arbitrum
 - Binance Smart Chain
-    
+
