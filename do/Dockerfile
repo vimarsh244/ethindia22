@@ -4,7 +4,7 @@ WORKDIR /
 # RUN npm install dotenv
 # RUN npm install node-fetch
 
-RUN npm install
+RUN npm cache clean --force
 
 
 EXPOSE 3000
