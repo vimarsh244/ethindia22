@@ -4,7 +4,6 @@ WORKDIR /
 # RUN npm install dotenv
 # RUN npm install node-fetch
 
-COPY package.json /
 RUN npm install
 
 
