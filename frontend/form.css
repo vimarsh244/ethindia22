@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: inherit;
+    padding: 5%
+}
+
+.inputing {
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+    padding: 3px
+}
+
+.p {
+    padding: 0px 5px;
+}
+
+form {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    outline: 0;
+    border: 1px solid #000;
+    background: #ffecd4
+}
+
+.title-block input,
+.title-block select {
+    margin-bottom: 10px
+}
+
+select {
+    padding: 7px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: 0 0
+}
+
+select,
+table {
+    width: 100%
+}
+
+option {
+    background: #fff
+}
+
+.subtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-block {
+    align-content: center;
+    text-size-adjust: 14px;
+    width: 100px;
+    height: 40%;
+    margin-top: 20px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #e6eef7;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #e6eef7
+}
+
+@media (min-width:568px) {
+    .title-block {
+        display: flex;
+        justify-content: center
+    }
+
+    .title-block select {
+        width: 97.5%;
+        margin-bottom: 0
+    }
+
+    .title-block input {
+        width: 90%;
+        margin-bottom: 0
+    }
+}

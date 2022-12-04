@@ -1,0 +1,187 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fee Ninja</title>
+    <meta name="description" content="Hassle free solution to check gas usage spent on all the networks and L2s">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta name="og:image" content="/ogimage.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="css/aspect-elements.css" rel="stylesheet" />
+    <link href="css/aspect-style.css" rel="stylesheet" />
+    <link href="form.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.ethers.io/scripts/ethers-v4.min.js"></script>
+
+    <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="ethers.js"></script> -->
+
+</head>
+
+<body id=root-container style=margin:0 onload=initAspectJS()>
+    <div id=content-container>
+        <div id=container-id-9- data-element-type=container>
+            <p id=text-id-5- data-element-type=text>fee.ninja
+            <div id=container-id-6- data-element-type=container>
+                <p id=text-id-10- data-element-type=text>Look at how much gas you have paid
+                <p id=text-id-12- data-element-type=text>You can change the chain on Metamask to update the stats.
+            </div><a id=button-id-13- data-element-type=button href=#toStats><span id=element-id-0->View the
+                    Stats</span></a>
+        </div>
+
+        <div id=container-id-1- data-element-type=container>
+            <div id=section-id-22- data-element-type=section>
+                <div id=container-id-12- data-element-type=container>
+                    <div id=container-id-13- data-element-type=container>
+                        <div id=container-id-14- data-element-type=container>
+                            <div id=toStats></div>
+                            <p id=text-id-16- data-element-type=text>
+                            <p id=text-id-17- data-element-type=text>Spent on Gas: <span id=element-id-27->...</span>
+                            <p id=text-id-24- data-element-type=text>That is like <span id=element-id-28->...</span>
+                            <p id=text-id-25- data-element-type=text>Which is <span id=element-id-29->...</span>
+                                GWEI on average to transact <span id=element-id-30->...</span> times.
+                            <p id=text-id-26- data-element-type=text><span id=element-id-31->...</span> failed,
+                                making
+                                you lose <span id=element-id-32->...</span>
+                        </div>
+                        <div>
+                            <button id=button-id-18- data-element-type=button onclick=shareLink()>
+                            <span id=element-id-19->Share</span>
+                        </div>
+                        <div id=shareButton><p></p></div>
+                        <div id=toForm></div>
+                        <div class=testbox>
+                            <form id=user action=/action_page.php>
+                                <div class=inputing>
+                                    <div class=title-block><input class=name name=name placeholder=Address>
+                                    </div>
+                                    <p class=p id=text-id-17> or </p>
+                                    <div class=title-block><input class=last name=last placeholder=ENS></div>
+                                </div>
+                                <div class=title-block><select>
+                                        <option value=title selected>Chain
+                                        <option value=eth>Ethereum mainnet
+                                        <option value=avax>Avalanche C chain
+                                        <option value=polygon>Polygon
+                                        <option value=xdai>Gnosis Chain (xDai)
+                                        <option value=arbi>Arbitrum
+                                        <option value=ftm>Fantom (FTM)
+                                        <option value=bsc>Binance Smart Chain
+                                    </select>
+                                </div>
+                                <div class=subtn>
+                                    <div class=btn-block><input value="Submit" type=button onclick=submitform()>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div><a id=image-id-20- data-element-type=image><img id=element-id-21-
+                            src=/images/ethereum-bg.png></a>
+                </div>
+            </div>
+        </div>
+
+
+        <p id=text-id-1- data-element-type=text><a id=link-id-5- data-element-type=link
+                href=htttps://devfolio.link target=_blank><br><br>About</a> | <a id=link-id-7- data-element-type=link
+                href=https://twitter.com/vimarshtweets target=_blank>Contact</a><br><br><span id=element-id-10->do the right thing <br> </span>
+        <p></p>
+    </div>
+
+
+
+    <script>
+        const provider = new ethers.getDefaultProvider();
+        window.addEventListener('load', async () => {
+            try {
+                window.ethereum.on('chainChanged', (_chainId) => window.location.reload());
+            }
+            catch (e) {
+                console.log("Probably not using metamask")
+            }
+
+            let params = getUrlVars();
+            let fullAddress = params.address || params.a || null;
+            fullAddress = (fullAddress == "") ? null : fullAddress;
+            let address = (fullAddress == null) ? null : fullAddress.split(":")[0];
+            if (address != null) {
+                let temp = address.substring(address.length - 4, address.length);
+                if (temp === ".eth") {
+                    let myPromise = new Promise(function (resolve, reject) {
+                        resolve(provider.resolveName(address));
+                    });
+                    address = await myPromise;
+                }
+            }
+            var chainIdSelected = '0x1';
+            let chainIdExtracted = (fullAddress == null) ? null : fullAddress.split(":")[1];
+            switch (chainIdExtracted) {
+                case "eth":
+                    chainIdSelected = '0x1';
+                    break;
+                case "avax":
+                    chainIdSelected = '0xa86a';
+                    break;
+                case "polygon":
+                    chainIdSelected = '0x89';
+                    break;
+                case "xdai":
+                    chainIdSelected = '0x64';
+                    break;
+                case "arbi":
+                    chainIdSelected = '0xa4b1';
+                    break;
+                case "ftm":
+                    chainIdSelected = '0xfa';
+                    break;
+                case "bsc":
+                    chainIdSelected = '0x38';
+                    break;
+            }
+            if (address == null) {
+                // if (window.hasOwnProperty("ethereum") && window.ethereum.hasOwnProperty("isMetaMask")) {   // removing the isMetaMask condition to perhaps let coinbase wallet, etc. work??
+                if (window.hasOwnProperty("ethereum")) {
+                    let addresses = await ethereum.request({ method: 'eth_requestAccounts' });
+                    chainIdSelected = await ethereum.request({ method: 'eth_chainId' });
+                    address = addresses[0];
+                } else {
+                    console.log('Specify an address via ?a= or ?address= url GET parameter, or sign into MetaMask.')
+                    $('#container-id-6-').html('<p id="text-id-10-" data-element-type="text">Look at how much gas you have paid</p>                <p id="text-id-12-">Works with any Web 3.0 Wallet or enter address <a id="link-id-6-" href="/#toForm">below</a>.</p>')
+                    return;
+                }
+            }
+
+            main(chainIdSelected, address)
+        });
+
+    </script>
+</body>
+
+</html>
