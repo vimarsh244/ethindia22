@@ -8,4 +8,4 @@ RUN npm cache clean --force
 
 
 EXPOSE 3000
-CMD ["npm", "main.js"]
+CMD ["node main.js"]
