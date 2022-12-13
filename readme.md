@@ -40,3 +40,7 @@ Backup: https://sage-melomakarona-16426c.netlify.app/
 - Arbitrum
 - Binance Smart Chain
 
+## Contributers 
+
+- [Vimarsh](https://github.com/vimarsh244)
+- [Utkarsh](https://github.com/0xAnon0602)
